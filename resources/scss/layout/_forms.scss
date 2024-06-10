@@ -1,0 +1,32 @@
+.form {
+     max-width: 50rem;
+     margin-bottom: 1rem;
+     
+ }
+
+ label {
+     display: block;
+     margin-bottom: 1rem;
+     font-size: 1.8rem;
+ }
+
+ input {
+     width: 100%;
+     padding: 1rem;
+     margin-bottom: 2rem;
+     border: 1px solid $color-grey-light;
+     border-radius: 1rem;
+ }
+
+ input[type="checkbox"]{
+    margin-bottom: 0rem;
+    margin-right: 1rem;
+    width: 1.5rem;
+    height: 1.5rem;
+ }
+ input[type="radio"]{
+    margin-bottom: 0rem;
+    margin-right: 0.5rem;
+    width: 1.2rem;
+    height: 1.2rem;
+ }

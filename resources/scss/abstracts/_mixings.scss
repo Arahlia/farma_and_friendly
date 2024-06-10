@@ -1,0 +1,11 @@
+@mixin respond($breakpoint){
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content};//@content contenido que hay dentro de los media-queries
+    }
+}
+//rangos media-queries
+//0-600
+//600-900
+//900-1200
+//1200-1800 normal
+//1800px + :

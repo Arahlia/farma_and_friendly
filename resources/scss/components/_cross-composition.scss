@@ -1,0 +1,15 @@
+.cross {
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    overflow: hidden;
+    width: 45%;
+    max-width: 85rem;
+    
+    &--mobile {
+        top: 25%;
+        width: auto;
+        height: auto !important;
+        bottom: auto;
+    }
+}

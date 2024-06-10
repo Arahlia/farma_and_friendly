@@ -1,0 +1,91 @@
+.u-padding-width-section {
+    padding: 0 7.5rem;
+    max-width: $tamanyo-max;
+    margin: 0 auto;
+
+    @include respond(phone) {
+        padding: 0 3rem;
+    }
+}
+
+.u-padding-top-bottom {
+    padding-top: $padding-medium;
+    padding-bottom: $padding-medium;
+}
+
+.u-padding-bottom-small-mobile {
+    @include respond(phone) {
+        margin-bottom: 5rem !important;
+    }
+}
+
+.u-relative {
+    position: relative !important;
+}
+
+.u-absolute {
+    position: absolute !important;
+}
+
+.u-text-center {
+    text-align: center;
+}
+
+.u-align-items-center {
+    align-items: center;
+}
+
+.u-div-reverse {
+    @include respond(phone) {
+        flex-direction: column-reverse;
+    }
+}
+
+.u-bottom-shadow {
+    box-shadow: 0px -30px 60px -30px rgba(171, 170, 170, 0.55) inset;
+}
+
+.u-top-shadow {
+    box-shadow: 0px 30px 50px -30px rgba(137, 137, 137, 0.55) inset;
+}
+
+.box-shadow {
+    box-shadow: 4px 4px 15px #7a7a7a;
+}
+
+.u-w100 {
+    width: 100%;
+}
+
+.u-h100 {
+    height: 100%;
+}
+
+.u-w100-mobile {
+    @include respond(phone) {
+        width: 100% !important;
+    }
+}
+
+.u-w50-mobile {
+    @include respond(phone) {
+        width: 50% !important;
+    }
+}
+
+.u-none-mobile {
+    @include respond(phone) {
+        display: none !important;
+    }
+}
+
+.u-block-mobile{
+    display: none !important;
+    @include respond(phone) {
+        display: block !important;
+    }
+}
+
+.u-yellow{
+    color: $yellow;
+}

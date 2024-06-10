@@ -1,0 +1,19 @@
+%container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.container--space-between{
+    @extend %container;
+    justify-content: space-between;
+}
+
+.container--space-around{
+    @extend %container;
+    justify-content: space-around;
+}
+
+.flex-column{
+    @extend %container;
+    flex-direction: column;
+}
+

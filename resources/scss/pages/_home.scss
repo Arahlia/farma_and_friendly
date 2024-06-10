@@ -1,0 +1,324 @@
+/*SECTION INITIATION*/
+.initiation {
+    height: 100vh;
+    max-height: 100rem;
+
+    @include respond(phone) {
+        height: fit-content;
+        max-height: fit-content;
+    }
+
+    &__text-box {
+        width: 45%;
+    }
+
+    &__title {
+        animation: showup 5s forwards;
+
+        @include respond(phone) {
+            animation: none;
+        }
+
+        &--2 {
+            width: 0px;
+            animation: reveal 5s forwards;
+
+            @include respond(phone) {
+                animation: none;
+            }
+
+            & span {
+                margin-left: -355px;
+                animation: slidein 7s forwards;
+
+                @include respond(phone) {
+                    animation: none;
+                    margin-left: 0;
+                }
+            }
+
+        }
+    }
+
+    &__text {
+        font-weight: 600;
+    }
+
+    &__mobile {
+        height: 75vh;
+        margin-top: -4rem;
+        max-height: 70rem;
+
+        @include respond(phone) {
+            height: auto;
+            margin-top: 0;
+        }
+
+        &__img {
+            height: 100%;
+
+            @include respond(phone) {
+                height: auto;
+            }
+        }
+    }
+
+    &__cross {
+        height: 85vh;
+        max-height: 85rem;
+
+        &__img {
+            height: 100%;
+        }
+    }
+}
+
+
+/* SECTION CHAT */
+.chat {
+    background:
+        linear-gradient(80deg, rgba(218, 208, 8, 0.42) 18.38%, rgba(255, 255, 255, 0.00) 76.63%),
+        linear-gradient(253deg, #FFF 42%, rgba(255, 255, 255, 0.00) 90.65%),
+        url(../../../public/img/bocadillos.png);
+    background-size: cover;
+
+    &__text-box {
+        width: 50%;
+        margin-top: 9rem;
+
+        @include respond(phone) {
+            margin-top: 2rem;
+            width: 100%;
+        }
+    }
+
+    &__composition {
+        width: 40%;
+
+        @include respond(phone) {
+            margin-bottom: 2rem;
+            width: 100%;
+        }
+    }
+
+    &__mobile {
+        z-index: 3;
+
+        &__img {
+            margin: 0 auto;
+        }
+    }
+
+    &__line-plane {
+        width: 46%;
+        top: 22%;
+        left: 0%;
+
+        @include respond(phone) {
+            width: 95%;
+            top: 50%;
+        }
+
+    }
+}
+
+
+/* SECTION CALENDAR */
+.calendar {
+    padding-top: calc($padding-medium + 2rem);
+    padding-bottom: calc($padding-medium + 10rem);
+
+    &__composition {
+        @include respond(phone) {
+            margin-top: 2rem;
+            width: 100%;
+        }
+    }
+
+    &__text-box {
+        width: 45%;
+
+        @include respond(phone) {
+            margin-top: 2rem;
+            width: 100%;
+        }
+    }
+
+    &__reminder {
+        border-radius: 2rem;
+        border: 1px solid $color-grey-light;
+        top: 43%;
+        left: -18%;
+        background-color: white;
+        padding: 3rem 3.4rem;
+        flex-direction: column;
+        gap: 1.5rem;
+        min-width: 21rem;
+
+        @include respond(phone) {
+            top: 35%;
+            left: 45%;
+            padding: 2.5rem 2.5rem;
+        }
+
+        &__title p {
+            color: #000;
+            font-size: 2rem;
+        }
+
+        &__title hr {
+            margin: auto;
+            width: 70%;
+            border: 1.5px solid $green;
+            gap: .5rem;
+        }
+
+        &__box {
+            border-radius: 0.5rem;
+            border: 1.5px solid $color-grey-light;
+            padding: .5rem 1.5rem;
+            gap: .5rem;
+
+            @include respond(phone) {
+                padding: .8rem 1.3rem;
+            }
+
+            &--large {
+                gap: .5rem;
+            }
+        }
+
+        &__box p {
+            font-size: 1.6rem;
+        }
+
+        &__icon {
+            width: 1.5rem;
+
+            @include respond(phone) {
+                width: 1.6rem;
+            }
+        }
+    }
+
+}
+
+
+/* SECTION TREATMENT */
+.treatment {
+    padding-top: calc($padding-medium + 4rem);
+    padding-bottom: calc($padding-medium + 4rem);
+    overflow: hidden;
+
+    &__box {
+        border-radius: 20px;
+        border: 2px solid $color-grey-light;
+        background: #FFF;
+        padding: 5rem 6.8rem;
+        flex-direction: column;
+        gap: 2rem;
+
+        @include respond(phone) {
+            padding: 4rem 4rem;
+            max-width: 35rem;
+            margin: 0 auto;
+        }
+
+        &__title__icon {
+            width: 2.5rem;
+        }
+
+        &__icon:first-child {
+            width: 4rem;
+        }
+
+        &__icon:last-child {
+            width: 2rem;
+        }
+    }
+
+    &__1 {
+        background-color: $purple-light;
+    }
+
+    &__2 {
+        background-color: $green;
+
+        &__content {
+            border-radius: 5rem 5rem 1.5rem 1.5rem;
+            border: 2px solid $color-grey-light;
+            background: #FFF;
+            padding: 4rem 1.4rem;
+        }
+
+        &__text {
+            font-size: 1.8rem;
+
+            &--small {
+                color: black;
+                font-size: 1.4rem;
+            }
+        }
+
+        &__info {
+            background-color: rgba(246, 246, 246, 1);
+            border-radius: 10px;
+            padding: 1rem 0.7rem;
+            width: 45%;
+        }
+    }
+
+    &__1,
+    &__2 {
+        border-radius: 15px;
+    }
+
+    &__1,
+    &__2__caption,
+    &__2__content {
+        padding: 1.5rem;
+
+        @include respond(phone) {
+            padding: 1.5rem 1rem;
+        }
+    }
+
+    &__1 p,
+    &__2__caption p {
+        color: #FFF;
+        font-size: 2rem;
+    }
+
+    &__features {
+        margin-top: 2rem;
+
+        & p {
+            margin-top: 2rem;
+        }
+
+        &__icon {
+            width: 1.2rem;
+            margin-left: .7rem;
+        }
+    }
+
+    &__text-box {
+        width: 55%;
+        padding-right: 7.5rem;
+
+        @include respond(phone) {
+            margin-top: 2rem;
+            width: 100%;
+            padding-right: 0;
+        }
+    }
+
+    &__cross {
+        max-width: 70rem;
+        align-items: end;
+
+        &--mobile{
+            top: 18%;
+        }
+    }
+}

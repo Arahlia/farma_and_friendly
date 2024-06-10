@@ -1,0 +1,79 @@
+body {
+    font-family: 'Montserrat';
+    color: $grey;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Roboto';
+    color: $purple;
+}
+
+.heading-primary {
+    font: {
+        size: 6rem;
+        style: normal;
+        weight: 700;
+
+    }
+
+    line-height: normal;
+    margin-bottom: 2rem;
+
+    // @include respond(phone) {
+    //     font-size: 4rem;
+    // }
+
+    &--special {
+        font: {
+            family: 'Roboto serif';
+            size: 8rem;
+        }
+
+        color: $yellow;
+        display: block;
+
+        // @include respond(phone) {
+        //     font-size: 5.5rem;
+        // }
+    }
+}
+
+.heading-secondary {
+    font-size: 5.2rem;
+    margin-bottom: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    &--green {
+        color: $green;
+
+        @include respond(phone) {
+            color: $purple;
+        }
+    }
+
+    @include respond(phone) {
+        text-align: center;
+    }
+}
+
+p, label {
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.text {
+    @include respond(phone) {
+        text-align: center;
+    }
+}
+
+label {
+    color: $yellow;
+}
