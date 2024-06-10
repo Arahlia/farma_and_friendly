@@ -40,6 +40,13 @@
         @endif
     </div>
     @endif
-
+    @if ($user->address || $user->city || $user->cp)
+    <div class="mb-8">
+        <h3 class="text-6xl mb-4">Dirección</h3>
+        <p class="text-2xl">{{ $user->address }}, {{ $user->city }}, {{ $user->cp }}</p>
+    </div>
+    @endif
+    @if (auth()->user()->role == 'pharmacy')
     <x-primary-button wire:click="addInformation" class="mt-4">Añadir información</x-primary-button>
+    @endif
 </div>

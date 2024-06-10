@@ -27,7 +27,7 @@
         {{-- header --}}
         <header class="w-full sticky inset-x-0 flex pb-4 pt-4 top-0 z-10 bg-white border-b ">
 
-            <div class="flex w-full items-center px-14 lg:px-4 gap-2 md:gap-5">
+            <div class="flex w-full items-center px-10 lg:px-4 gap-2 md:gap-5">
 
                 {{-- avatar --}}
 

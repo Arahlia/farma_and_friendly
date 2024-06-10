@@ -1,4 +1,4 @@
-<div x-data="{type:'all',query:@entangle('query').live, , isMenuOpen: false}" x-init="setTimeout(()=>{
+<div x-data="{type:'all',query:@entangle('query').live,}" x-init="setTimeout(()=>{
 
 conversationElement = document.getElementById('conversation-'+query);
 
@@ -28,31 +28,9 @@ Echo.private('users.{{Auth()->User()->id}}')
                 <h5 class="font-extrabold text-2xl">Chats</h5>
             </div>
 
-            <!-- <button>
-
-            <svg class="w-7 h-7"  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                <path d="M6 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
-              </svg>
-
-         </button> -->
-
-            <button class="lg:hidden" @click="isMenuOpen = !isMenuOpen">
-                <svg class="w-7 h-7" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                    <path d="M6 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z" />
-                </svg>
-            </button>
-
         </div>
 
     </header>
-    <div x-show="isMenuOpen" class="lg:hidden fixed inset-0 z-20 bg-black bg-opacity-50" @click="isMenuOpen = false"></div>
-    <div x-show="isMenuOpen" class="lg:hidden fixed inset-y-0 left-0 z-30 w-64 bg-white shadow-lg overflow-y-auto">
-        <div class="p-4">
-            <button @click="type = 'all'" :class="{ 'bg-blue-100 border-0 text-black': type == 'all' }" class="w-full inline-flex justify-center items-center rounded-full gap-x-1 text-xl font-medium px-3 lg:px-5 py-1 lg:py-2.5 border ">
-                All
-            </button>
-        </div>
-    </div>
 
     <main class=" overflow-y-scroll overflow-hidden grow  h-full relative " style="contain:content">
 
