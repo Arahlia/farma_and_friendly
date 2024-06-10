@@ -6,6 +6,7 @@ use Livewire\Component;
 use App\Models\Conversation;
 use App\Models\User;
 
+
 class Pharmacies extends Component
 {
 
@@ -15,6 +16,7 @@ class Pharmacies extends Component
 
     protected $listeners = ['messageUser' => 'message'];
 
+    
     public function message($userId)
     {
 
